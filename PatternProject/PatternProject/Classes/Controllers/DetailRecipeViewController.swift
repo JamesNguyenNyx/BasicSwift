@@ -20,6 +20,9 @@ class DetailRecipeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.title = "設定"
         self.configureViewWithRecipe()
     }
     

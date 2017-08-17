@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -33,6 +32,9 @@
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="muffins.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Tb4-vv-pug">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="289"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="289" id="S08-bQ-JsU"/>
+                                    </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chocolate Cereal" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGk-Of-AOc">
                                     <rect key="frame" x="8" y="309" width="359" height="27"/>
@@ -66,7 +68,6 @@
                                 <constraint firstItem="Tb4-vv-pug" firstAttribute="leading" secondItem="cal-5B-YEm" secondAttribute="leading" id="Eb8-ST-S18"/>
                                 <constraint firstItem="sQo-lj-vUX" firstAttribute="leading" secondItem="cal-5B-YEm" secondAttribute="leading" constant="8" id="Eyy-7C-OlA"/>
                                 <constraint firstItem="jGk-Of-AOc" firstAttribute="top" secondItem="Tb4-vv-pug" secondAttribute="bottom" constant="20" id="NX1-wu-xxQ"/>
-                                <constraint firstItem="Tb4-vv-pug" firstAttribute="height" secondItem="cal-5B-YEm" secondAttribute="height" multiplier="1.3:3" id="OaY-eP-4Cx"/>
                                 <constraint firstAttribute="trailing" secondItem="sQo-lj-vUX" secondAttribute="trailing" constant="8" id="QYA-M3-fKV"/>
                                 <constraint firstItem="jGk-Of-AOc" firstAttribute="leading" secondItem="cal-5B-YEm" secondAttribute="leading" constant="8" id="d82-nd-HoM"/>
                                 <constraint firstItem="JZd-gA-1pG" firstAttribute="leading" secondItem="cal-5B-YEm" secondAttribute="leading" constant="8" id="e1w-AK-IF9"/>
@@ -81,8 +82,8 @@
                         </view>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="cal-5B-YEm" firstAttribute="width" secondItem="Xwl-He-tWr" secondAttribute="width" id="FeY-ov-WwV"/>
                         <constraint firstAttribute="bottom" secondItem="cal-5B-YEm" secondAttribute="bottom" id="Gpm-ny-L9h"/>
-                        <constraint firstItem="cal-5B-YEm" firstAttribute="height" secondItem="Xwl-He-tWr" secondAttribute="height" id="RAa-8z-pie"/>
                         <constraint firstItem="cal-5B-YEm" firstAttribute="top" secondItem="Xwl-He-tWr" secondAttribute="top" id="Uow-HF-rbj"/>
                         <constraint firstItem="cal-5B-YEm" firstAttribute="leading" secondItem="Xwl-He-tWr" secondAttribute="leading" id="Vkx-Ug-HAk"/>
                         <constraint firstAttribute="trailing" secondItem="cal-5B-YEm" secondAttribute="trailing" id="t8r-Gp-Ojd"/>
@@ -93,11 +94,11 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Xwl-He-tWr" secondAttribute="bottom" id="6i5-fb-eYT"/>
                 <constraint firstAttribute="trailing" secondItem="Xwl-He-tWr" secondAttribute="trailing" id="BzB-ZC-aQ1"/>
+                <constraint firstItem="cal-5B-YEm" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="750" id="WD6-rC-ZYz"/>
                 <constraint firstItem="Xwl-He-tWr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="X65-yE-LFy"/>
-                <constraint firstItem="cal-5B-YEm" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="cae-ER-0wR"/>
                 <constraint firstItem="Xwl-He-tWr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cdV-NP-sKA"/>
             </constraints>
-            <point key="canvasLocation" x="24.5" y="51.5"/>
+            <point key="canvasLocation" x="-137" y="23"/>
         </view>
     </objects>
     <resources>

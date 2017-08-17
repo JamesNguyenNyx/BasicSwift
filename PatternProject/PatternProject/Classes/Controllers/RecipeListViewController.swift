@@ -18,12 +18,14 @@ class RecipeListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadRecipes()
+        configureTableView()
     }
     
     fileprivate func configureTableView() {
         tableView.dataSource = tableViewDataSource
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 150
+        tableView.delegate = self
+        tableView.tableFooterView = UIView()
+        tableView?.register(RecipeCell.nib, forCellReuseIdentifier: RecipeCell.identifier)
     }
     
     fileprivate func loadRecipes() {
@@ -57,16 +59,13 @@ extension RecipeListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        guard let indexPath = tableView.indexPathForSelectedRow,
-            let recipe = tableViewDataSource.recipeForIndexPath(indexPath) else {
-                return
-        }
-        
         let detailVC = DetailRecipeViewController(nibName: DetailRecipeViewController.className, bundle: nil)
-        detailVC.recipe = recipe
-        let navigation = UINavigationController(rootViewController: detailVC)
-        self.navigationController?.pushViewController(navigation, animated: true)
+        detailVC.recipe = tableViewDataSource.recipeArray?[indexPath.row]
+        self.navigationController?.pushViewController(detailVC, animated: true)
         
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }

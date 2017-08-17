@@ -26,29 +26,36 @@ extension RecipeListTableViewDataSource: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: RecipeCell.className) as! RecipeCell
-        let recipe = recipeForIndexPath(indexPath)
         
-        cell.recipeTitleLabel.text = recipe?.title ?? ""
+        let item = recipeArray?[indexPath.row]
         
-        if let prepTimeInMinutes = recipe?.prepTimeInMinutes {
-            if prepTimeInMinutes == 1 {
-                cell.recipePrepTimeLabel.text = "Prep time: \(prepTimeInMinutes) minute"
-            } else {
-                cell.recipePrepTimeLabel.text = "Prep time: \(prepTimeInMinutes) minutes"
-            }
-        } else {
-            cell.recipePrepTimeLabel.text = ""
-        }
-        
-        if let imageName = recipe?.imageName {
-            let imageURL = Bundle.main.url(forResource: imageName, withExtension: ".jpg")!
-            cell.recipeImageView.af_setImage(withURL: imageURL)
+        if let cell = tableView.dequeueReusableCell(withIdentifier: RecipeCell.className, for: indexPath) as? RecipeCell {
             
-        } else {
-            cell.recipeImageView.image = nil
+            cell.recipeTitleLabel.text = item?.title
+            
+            if let prepTimeInMinutes = item?.prepTimeInMinutes {
+                if prepTimeInMinutes == 1 {
+                    cell.recipePrepTimeLabel.text = "Prep time: \(prepTimeInMinutes) minute"
+                } else {
+                    cell.recipePrepTimeLabel.text = "Prep time: \(prepTimeInMinutes) minutes"
+                }
+            } else {
+                cell.recipePrepTimeLabel.text = ""
+            }
+            
+            if let imageName = item?.imageName {
+                let imageURL = Bundle.main.url(forResource: imageName, withExtension: ".jpg")!
+                cell.recipeImageView.af_setImage(withURL: imageURL)
+                
+            } else {
+                cell.recipeImageView.image = nil
+            }
+            
+            return cell
+
         }
         
-        return cell
+        return UITableViewCell()
+    
     }
 }

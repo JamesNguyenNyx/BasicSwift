@@ -35,6 +35,7 @@
 		8D146B591F454C4000B954E2 /* CannedRecipeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D146B581F454C4000B954E2 /* CannedRecipeNetworkManager.swift */; };
 		8D146B5B1F454E9D00B954E2 /* CannedRecipeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D146B5A1F454E9D00B954E2 /* CannedRecipeBuilder.swift */; };
 		8D146B5D1F454F0F00B954E2 /* RecipeDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D146B5C1F454F0F00B954E2 /* RecipeDirector.swift */; };
+		8D146B5F1F45578700B954E2 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D146B5E1F45578700B954E2 /* UITableViewCellExtension.swift */; };
 		F80613B3DCB3C99A9911E404 /* Pods_PatternProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2259806C0F89E37E7B788E51 /* Pods_PatternProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		8D146B581F454C4000B954E2 /* CannedRecipeNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CannedRecipeNetworkManager.swift; sourceTree = "<group>"; };
 		8D146B5A1F454E9D00B954E2 /* CannedRecipeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CannedRecipeBuilder.swift; sourceTree = "<group>"; };
 		8D146B5C1F454F0F00B954E2 /* RecipeDirector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDirector.swift; sourceTree = "<group>"; };
+		8D146B5E1F45578700B954E2 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 		8D146B411F453B8C00B954E2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8D146B5E1F45578700B954E2 /* UITableViewCellExtension.swift */,
 				8D146B421F453BBB00B954E2 /* NSObjectExtension.swift */,
 			);
 			path = Extension;
@@ -386,6 +389,7 @@
 				8D146B4F1F45416000B954E2 /* RecipeListTableViewDataSource.swift in Sources */,
 				8D146B4C1F453F1B00B954E2 /* DetailRecipeViewController.swift in Sources */,
 				8D146B5B1F454E9D00B954E2 /* CannedRecipeBuilder.swift in Sources */,
+				8D146B5F1F45578700B954E2 /* UITableViewCellExtension.swift in Sources */,
 				8D146B591F454C4000B954E2 /* CannedRecipeNetworkManager.swift in Sources */,
 				8D146B3F1F453AFE00B954E2 /* RecipeListViewController.swift in Sources */,
 				8D146B431F453BBB00B954E2 /* NSObjectExtension.swift in Sources */,
