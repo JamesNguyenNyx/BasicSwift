@@ -12,6 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailRecipeViewController" customModule="PatternProject" customModuleProvider="target">
             <connections>
+                <outlet property="imageView" destination="Tb4-vv-pug" id="1Hc-uy-vY9"/>
+                <outlet property="ingredientsLabel" destination="JZd-gA-1pG" id="gTl-Kd-S4w"/>
+                <outlet property="instructionsLabel" destination="YDJ-Cy-2It" id="5j1-c2-0nJ"/>
+                <outlet property="prepTimeLabel" destination="sQo-lj-vUX" id="vfw-vs-cvR"/>
+                <outlet property="titleLabel" destination="jGk-Of-AOc" id="Los-gI-yRc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

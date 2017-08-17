@@ -1,0 +1,67 @@
+{
+  "recipes": [
+              {
+              "title": "Aaron's Veggie Medley",
+              "ingredients": "1 bag vegetable medley, 1 pot, 1 stirring spoon",
+              "instructions": "1. Open vegetable medley bag.\n2. Pour medley into pot.\n3. (Optional) Read cooking instructions printed on bag. Seriously, it's right on the bag. Yeah, I didn't know it either.\n4. Cook medley until done.\n5. Eat it! It's surprisingly really good.",
+              "prepTime": 20,
+              "imageName": "vegetable_medley"
+              },
+              {
+              "title": "Greg's Fruit Salad",
+              "ingredients": "1 Banana, 1/4 cup blue berries, 1/4 cup raspberries, 1/2 peach, 1 knife, 1 bowl (optional)",
+              "instructions": "1. Wash the blue berries, raspberries, and peaches in cold water. Go ahead and wash the banana too for good measure.\n2. Peel the banana.\n3. Ninja chop the fruit into bite-size pieces.\n4. (Optional) Place fruit in bowl.\n5. Eat your healthy snack!",
+              "prepTime": 5,
+              "imageName": "fruit_bowl"
+              },
+              {
+              "title": "Josh's Lil' Smokey Croissants",
+              "ingredients": "1 canister croissants, 1 package lil' smokeys, 1 baking sheet",
+              "instructions": "1. Open croissants canister. Be careful- it's pressurized, and you never know whether the can is going to explode or not.\n3. Unroll croissants on baking sheet, and leave each open. \n4. Open lil' smokeys package. Resist urge to eat several now.\n5. Place one smokey inside each croissant.\n6. Roll croissants around smokeys.\n7. Bake until golden brown.\n8. Share with family and friends... well, one or two.",
+              "prepTime": 20,
+              "imageName": "lil_smokey_croissants"
+              },
+              {
+              "title": "Mike's Light Lemonade",
+              "ingredients": "1 cup water, 1/4 cup ice (optional), 1 lemon (optional), 1 knife (optional), 1 glass",
+              "instructions": "1. Pour water into glass. \n2. (Optional) Cut lemon in half.\n3. (Optional) Cut lemon halves in half.\n4. (Optional) Cut lemon half halves in half.\n5. (Optional) Add lemon pieces into glass.\n6. (Optional) Add ice into glass.\n7. Drink!",
+              "prepTime": 5,
+              "imageName": "lemon_water"
+              },
+              {
+              "title": "Ray's Chocolate Cereal",
+              "ingredients": "1 box chocolate cereal, 2 cups milk, 1 bowl, 1 spoon",
+              "instructions": "1. Tear open the cereal box (if not already open from previous enjoyment).\n2. Pour cereal into bowl.\n3. Carefully pour milk onto the cereal (don't spill it!).\n4. Gobble that cereal down 'cause you've got code to write.",
+              "prepTime": 2,
+              "imageName": "chocolate_cereal"
+              },
+              {
+              "title": "Scott's Spaghetti",
+              "ingredients": "Whatever pasta and sauce you got in your pantry",
+              "instructions": "1. Check expiration date on pasta and sauce. Seriously, you've gotta think about your health. Bad pasta sauce can really ruin your coding plans (and pants)!\n2. Boil pasta in water until bendy but not too bendy.\n3. Drain water from pasta, preferably over sink (warning: hot water may kill grass).\n4. Add sauce to pot.\n5. Heat until sauce starts to bubble.\n6. Let pasta and sauce cool.\n7. Eat and enjoy!",
+              "prepTime": 15,
+              "imageName": "spaghetti_pasta"
+              },
+              {
+              "title": "Vicki's Favorite Muffins",
+              "ingredients": "1 car, 1 wallet",
+              "instructions": "1. Drive to your local grocery store.\n2. Look for the bakery.\n3. Find your favorite muffins.\n4. Buy muffins.\n5. Return home.\n6. Don't share with Ray.",
+              "prepTime": 30,
+              "imageName": "muffins"
+              },
+              {
+              "title": "You-don't-have-a-problem Breakfast Soda",
+              "ingredients": "3 cans soda",
+              "instructions": "1. Open first can of soda.\n2. Drink soda.\n3. Open second can of soda.\n4. Drink soda.\n5. Open third can of soda.\n6 Drink soda.\n7. Feel the caffeine buzz. Now get back to coding!",
+              "prepTime": 1,
+              "imageName": "soda_can"
+              },
+              {
+              "title": "Team-favorite Roasted Almonds",
+              "ingredients": "1 package roasted almonds, 1 bowl (optional)",
+              "instructions": "1. Open roasted almonds package.\n2. (Optional) Pour almonds into bowl. Make sure to do this quietly, or else you're gonna have to share with others. Better yet, skip the bowl.\n3. Eat and enjoy those salty, sweet nuts.",
+              "prepTime": 2,
+              "imageName": "roasted_almonds"
+              }
+              ]
+}

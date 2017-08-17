@@ -23,10 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         if let window = self.window {
             let recipeVC = RecipeListViewController(nibName: RecipeListViewController.className, bundle: nil)
+            recipeVC.recipeDirector = RecipeDirector.cannedRecipeDirector()
             let navigation = UINavigationController(rootViewController: recipeVC)
             window.rootViewController = navigation
             window.makeKeyAndVisible()
         }
     }
+
 }
 
